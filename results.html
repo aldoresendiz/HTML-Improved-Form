@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Results Page</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
     <main>
@@ -12,7 +12,7 @@
         <div>
             <h2 id="status-message"></h2>
             <h3 id="sub-message"></h3>
-            <img src="assets/images/aruba.jpg" class="mini-image">
+            <img src="assets/images/aruba.jpg" class="mini-image" alt="Image of my favorite ">
             <h4 id="small-print"></h4>
             <h5 id="disclaimer"></h5>
             <div id="address1"></div>
@@ -45,13 +45,16 @@
 
         // Put the image of the chosen vacation destination
         if (choice == 'Japan') {
-            document.querySelector('.mini-image').src = 'assets/images/japan.jpg'
+            document.querySelector('.mini-image').src = '/assets/images/japan.jpg'
         }
         else if (choice == 'New Zealand') {
-            document.querySelector('.mini-image').src = 'assets/images/new-zealand.jpg'
+            document.querySelector('.mini-image').src = '/assets/images/new-zealand.jpg'
         }
         else if (choice == 'Reykjavik') {
-            document.querySelector('.mini-image').src = 'assets/images/iceland.jpg'
+            document.querySelector('.mini-image').src = '/assets/images/iceland.jpg'
+        }
+        else {
+            document.querySelector('.mini-image').src = '/assets/images/aruba.jpg'
         }
 
         // Change display based on whether they won or not
